@@ -30,41 +30,28 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
+
+
+
+## Sector Overview & Market Dynamics
+
+The global in-memory database and computing market is estimated at approximately $7.6B to $10B+ in 2024 and projected to reach $30B to $48B+ by the early 2030s (growing at a ~14%–19% CAGR). The market is moderately fragmented overall—anchored at the top by enterprise incumbents (AWS, SAP, Oracle, Microsoft) who capture massive workloads through cloud and ERP bundling, while remaining dynamically fragmented across specialized low-latency caching vendors, in-memory data grids, and open-source ecosystems (Redis, Valkey, Hazelcast, Apache Ignite/GridGain).
 
 
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Redis Enterprise (Redis Cloud)](https://redis.io/cloud/)**  
-
-  Managed Redis with active-active geo-distribution, automatic failover, and enterprise support. **Licensing nuance**: Redis 8 is available under RSALv2, SSPLv1, or AGPLv3—not OSI-approved open-source . Redis Enterprise is commercial. Best for organizations that want managed Redis without self-hosting operational burden.
-
-
-
-- **[Amazon ElastiCache](https://aws.amazon.com/elasticache/)**  
-
-  AWS's managed Redis and Memcached service. Serverless and node-based options with automatic failover. Consumption-based pricing. Best for AWS-native architectures requiring managed in-memory caching.
-
-
-
-- **[Hazelcast Cloud](https://cloud.hazelcast.com/)**  
-
-  Managed Hazelcast data grid with enterprise features. **Community Edition** is free under Apache 2.0 plus the Hazelcast Community License; Enterprise adds persistence and WAN replication . Best for JVM shops wanting managed data grid without operating the cluster.
-
-
-
-- **[GridGain (Apache Ignite-based)](https://www.gridgain.com/)**  
-
-  Commercial platform built on Apache Ignite, adding enterprise support, management tooling, and advanced security. Best for organizations that want Ignite's capabilities with commercial backing.
+| Platform | Company Size (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier Limits | Key Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Amazon ElastiCache](https://aws.amazon.com/elasticache/)** | **~$2.3T+ Market Cap** (Amazon) / AWS ~$108B annual revenue (2024) | Starts at **$0.017/hour** (~$12.41/month) for `cache.t3.micro` on-demand (Valkey/Redis/Memcached); Serverless from ~$0.006/GB-hour | **12-Month Free Tier**: 750 hours/month of `cache.t3.micro` or `cache.t2.micro` node usage + 15 GiB data transfer out (for accounts created before July 15, 2025) OR **$100 AWS Free Tier credits** (for newer accounts, applicable to Serverless/instances). | Fully managed Redis, Valkey, and Memcached service natively integrated into AWS VPCs with automatic failover and serverless auto-scaling. |
+| **[Redis Enterprise (Redis Cloud)](https://redis.io/cloud/)** | **~$2.0B Valuation** / ~$200M+ ARR | **Essentials plan starts at $5/month** (250 MB storage, 1,000 ops/sec, 256 connections); Dedicated Pro starts at $200/month | **Forever Free Plan**: 1 database, up to **30 MB memory**, 100 ops/sec max throughput, 30 concurrent connections, and 5 GB/month total network bandwidth (no HA/clustering). | Fully managed Redis with Active-Active geo-distribution, 99.999% SLA uptime, Redis Stack data models, and enterprise support. |
+| **[Hazelcast Cloud](https://cloud.hazelcast.com/)** | **~$100M–$250M Valuation** (~$66.7M total funding) / ~$10M–$50M ARR | **Pay-as-you-go Serverless** starting per GiB-hour consumed (~$0.10/GiB-hour meter); Dedicated clusters via custom commitments | **Free-for-life Sandbox**: Development cluster capped at **0.5 GiB (512 MiB) storage**, 1 single member (no HA/persistence/backups, cluster auto-pauses after inactivity), plus a **14-day fully featured Cloud trial**. | Managed in-memory computing and distributed streaming platform (Jet engine + IMDG) for low-latency compute and near-cache JVM applications. |
+| **[GridGain (Nebula)](https://www.gridgain.com/)** | **~$25M–$50M Historical Valuation** (~$33M–$55M total funding; acquired by MariaDB in 2026) / ~$10M–$50M ARR | **Managed Clusters start at $1.98/hour** (Size S: AWS `r5.xlarge`, 4 vCPU, 30.5 GB RAM, 16 GB off-heap, 400 GB SSD); Attached monitoring starts at $0.11/node/hour | **30-Day Free Trial**: Fully functional evaluation license key for GridGain Enterprise/Nebula platform features (no permanent free cloud tier). | Commercial in-memory data grid and database powered by Apache Ignite, featuring ANSI-99 SQL, distributed ACID transactions, and continuous replication. |
 
 
 
