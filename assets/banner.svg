@@ -108,7 +108,7 @@
   <g transform="translate(735, 36)">
     <rect width="215" height="28" rx="14" fill="#1e293b" stroke="#a855f7" stroke-width="1" stroke-opacity="0.6" />
     <circle cx="14" cy="14" r="5" fill="#a855f7" />
-    <text x="28" y="18" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1">CACHES &bull; GRIDS &bull; STORES</text>
+    <text x="28" y="18" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1">CACHES &#8226; GRIDS &#8226; STORES</text>
   </g>
 
   <!-- Foreground Hero Title -->
